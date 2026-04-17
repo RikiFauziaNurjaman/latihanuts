@@ -71,6 +71,6 @@ class DefaultFirebaseOptions {
     authDomain: 'latihanuts-5f7f9.firebaseapp.com',
     storageBucket: 'latihanuts-5f7f9.firebasestorage.app',
     measurementId: 'G-9489DD9PNQ',
+    databaseURL: 'https://latihanuts-5f7f9-default-rtdb.firebaseio.com',
   );
-
 }
