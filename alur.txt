@@ -1,0 +1,22 @@
+# 1. Buat project flutter baru
+flutter create latihanuts
+cd latihanuts
+
+# 2. Install Firebase CLI (Pastikan Node.js & npm sudah terinstall di Arch Linux kamu)
+sudo npm install -g firebase-tools
+
+# 3. Login ke akun Google/Firebase kamu
+firebase login
+
+# 4. Install & aktivasi FlutterFire CLI untuk konfigurasi otomatis
+dart pub global activate flutterfire_cli
+
+# (Opsional) Jika command flutterfire tidak dikenali, pastikan path pub-cache sudah di-export di ~/.bashrc atau ~/.zshrc kamu:
+# export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+# 5. Hubungkan project Flutter dengan Firebase
+flutterfire configure 
+# Pilih platform Android (dan iOS/Web jika perlu) dengan menekan spasi, lalu enter.
+
+# 6. Tambahkan library Firebase Core dan Realtime Database ke dalam project
+flutter pub add firebase_core firebase_database
